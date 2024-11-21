@@ -1,17 +1,17 @@
 # Luxora Couture
 
-Este proyecto es parte de los exámenes de 'TalentoTech Caribe'. En él se desarrollará un ecommerce básico llamado Luxora Couture.
+Este proyecto forma parte de los exámenes de 'TalentoTech Caribe' y consiste en el desarrollo de un eCommerce básico denominado Luxora Couture.
 
 ## Descripción
 
-Luxora Couture es una tienda en línea que ofrece una amplia gama de productos de moda. El objetivo de este proyecto es crear una plataforma simple pero funcional para la venta de productos de moda.
+Luxora Couture será una plataforma de eCommerce enfocada en ofrecer ropa elegante y exclusiva, diseñada para personas que buscan piezas modernas que reflejen su estilo único. El sitio permitirá a los usuarios explorar el catálogo sin necesidad de registrarse, seleccionar detalles específicos de los productos y completar sus compras de manera segura. Entre sus principales objetivos está proporcionar una experiencia de compra intuitiva y accesible y ofrecer un sistema confiable para la gestión de pedidos, todo disponible desde dispositivos móviles y de escritorio.
 
 ## Características
 
 - Navegación fácil e intuitiva
 - Catálogo de productos
 - Carrito de compras
-- Registro e inicio de sesión de usuarios
+- Registro de usuarios
 - Proceso de pago integrado
 
 ## Tecnologías Utilizadas
@@ -20,7 +20,7 @@ Luxora Couture es una tienda en línea que ofrece una amplia gama de productos d
 - CSS
 - JavaScript
 - Python
-- Fask
+- Flask
 - MySql
 
 ## Instalación
