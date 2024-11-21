@@ -1,7 +1,7 @@
 import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from config import SQLALCHEMY_DATABASE_URI  
+from config import SQLALCHEMY_DATABASE_URI
 
 # Obtener la ruta correcta para los templates
 template_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../templates'))
