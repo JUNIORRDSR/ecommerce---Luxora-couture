@@ -1,0 +1,47 @@
+CREATE DATABASE EcommerceDB;
+USE EcommerceDB;
+
+CREATE TABLE Producto (
+    ProductoID INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(100) NOT NULL,
+    Descripcion TEXT,
+    Precio DECIMAL(10, 2) NOT NULL,
+    Imagen VARCHAR(255),
+    Stock INT NOT NULL,
+    Categoria VARCHAR(50),
+    Talla VARCHAR(10)
+);
+
+CREATE TABLE Usuario (
+    UsuarioID INT PRIMARY KEY AUTO_INCREMENT,
+    NombreCompleto VARCHAR(150) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    Contraseña VARCHAR(255) NOT NULL,
+    Cedula VARCHAR(20) UNIQUE NOT NULL,
+    Telefono VARCHAR(20)
+);
+
+CREATE TABLE Compra (
+    CompraID INT PRIMARY KEY AUTO_INCREMENT,
+    UsuarioID INT NOT NULL,
+    FechaCompra DATETIME DEFAULT CURRENT_TIMESTAMP,
+    MetodoPago VARCHAR(50) NOT NULL,
+    Total DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (UsuarioID) REFERENCES Usuario(UsuarioID)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+
+CREATE TABLE DetalleCompra (
+    DetalleCompraID INT PRIMARY KEY AUTO_INCREMENT,
+    CompraID INT NOT NULL,
+    ProductoID INT NOT NULL,
+    Cantidad INT NOT NULL,
+    PrecioUnitario DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (CompraID) REFERENCES Compra(CompraID)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    FOREIGN KEY (ProductoID) REFERENCES Producto(ProductoID)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
