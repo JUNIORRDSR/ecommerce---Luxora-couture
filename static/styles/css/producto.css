@@ -1,0 +1,84 @@
+#product-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+    padding: 2rem;
+}
+
+.product-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product-info {
+    max-width: 400px;
+    width: 100%;
+}
+
+.product-name {
+    font-family: 'Playfair Display', serif;
+    color: var(--color-burgundy);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: var(--color-teal);
+    margin-bottom: 1rem;
+}
+
+.product-description {
+    margin-bottom: 1rem;
+}
+
+.product-size, .product-quantity {
+    margin-bottom: 1rem;
+}
+
+.add-to-cart {
+    background-color: var(--color-burgundy);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: var(--color-gold);
+}
+button {
+    border-radius: 25px;
+    background: linear-gradient(145deg, #8B0D32, #A61D44);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #A61D44, #8B0D32);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+.product-size select, 
+.product-quantity input {
+    display: block;
+    margin: 0.5rem auto;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    width: 80%;
+    max-width: 200px;
+}
+

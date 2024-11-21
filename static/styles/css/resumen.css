@@ -1,0 +1,85 @@
+#resumen-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: var(--color-burgundy);
+    font-family: 'Playfair Display', serif;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+#cart-items {
+    margin-bottom: 1rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+#cart-total {
+    font-weight: bold;
+    color: var(--color-teal);
+}
+
+#customer-details, #payment-method {
+    line-height: 1.6;
+}
+
+#pay-button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-burgundy);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pay-button:hover {
+    background-color: var(--color-gold);
+}
+
+#success-message {
+    text-align: center;
+    padding: 2rem;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+#success-message h2 {
+    color: #2e7d32;
+}
+
+.hidden {
+    display: none;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-burgundy);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--color-gold);
+}

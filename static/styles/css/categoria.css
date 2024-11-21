@@ -1,0 +1,13 @@
+#category-title {
+    text-align: center;
+    color: var(--color-burgundy);
+    font-family: 'Playfair Display', serif;
+    margin: 2rem 0;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}

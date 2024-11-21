@@ -1,0 +1,74 @@
+#cart-items {
+    padding: 2rem;
+    background-color: var(--color-light-gray);
+    border-radius: 8px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-light-gray);
+    padding: 1rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item:hover {
+    background-color: var(--color-light-burgundy);
+}
+
+.cart-item-info {
+    flex-grow: 1;
+    margin-right: 1rem;
+}
+
+.cart-item-name {
+    font-family: 'Playfair Display', serif;
+    color: var(--color-burgundy);
+    font-size: 1.1rem;
+}
+
+.cart-item-price {
+    color: var(--color-teal);
+    font-weight: bold;
+}
+
+.remove-item {
+    background-color: var(--color-burgundy);
+    color: rgb(43, 255, 0);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.remove-item:hover {
+    background-color: var(--color-gold);
+    color: white;
+}
+
+#cart-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-burgundy);
+    margin-top: 1rem;
+    text-align: right;
+}
+
+#checkout {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: var(--color-teal);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#checkout:hover {
+    background-color: var(--color-dark-teal);
+}

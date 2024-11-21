@@ -1,0 +1,84 @@
+#order-summary {
+    background-color: var(--color-light-gray);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+#payment-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#payment-form input,
+#payment-form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#payment-form button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-burgundy);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#payment-form button:hover {
+    background-color: var(--color-gold);
+}
+
+#cart-modal button {
+    display: block;
+    margin: 1.5rem auto;
+    padding: 0.8rem 2rem;
+    background-color: var(--color-burgundy);
+    color: rgb(176, 16, 16);
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#cart-modal button:hover {
+    background-color: var(--color-gold);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgb(140, 255, 0);
+}
+
+input {
+    width: 50%;
+    max-width: 250px;
+    padding: 0.8rem;
+    margin: 0.8rem 0;
+    border: 2px solid var(--color-burgundy);
+    border-radius: 12px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--color-burgundy);
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--color-gold);
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+    transform: scale(1.02);
+}
+
+input::placeholder {
+    color: var(--color-burgundy);
+    opacity: 0.6;
+}
