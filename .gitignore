@@ -3,6 +3,7 @@ venv/
 env/
 .env/
 .venv/
+Scripts
 
 # Archivos de Python
 __pycache__/

@@ -1,18 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/static/scripts/script.js"></script>
-    <link rel="stylesheet" href="/static/styles/style.css">
-    <title>Pruebas</title>
+    <title>Luxora Couture - Elegancia en cada detalle</title>
+    <link rel="stylesheet" href="/static/styles/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hola Mundo</h1>
-    <!-- Realizar un formulario para enviar datos-->
-    <form action="/" method="post">
-        <input type="text" name="nombre" placeholder="Nombre">
-        <input type="submit" value="Enviar">
-    </form>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Luxora Couture</a>
+            </div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Productos</a>
+                    <div class="dropdown-content">
+                        <a href="#" data-category="mujer">Mujer</a>
+                        <a href="#" data-category="hombre">Hombre</a>
+                        <a href="#" data-category="infantil">Infantil</a>
+                    </div>
+                </li>
+                <li><a href="#" id="cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                <span id="cart-count">0</span></a></li>
+                <li><a href="/templates/pages/html/cuenta.html" id="user-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-pen"><path d="M11.5 15H7a4 4 0 0 0-4 4v2"/><path d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/><circle cx="10" cy="7" r="4"/></svg>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products-grid" class="products-grid">
+            <!-- Los productos se cargarán dinámicamente aquí -->
+        </section>
+    </main>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-product-name"></h2>
+            <img src="" alt="" id="product-image" width="100%" height="auto">
+            <p id="modal-product-price"></p>
+            <p id="modal-product-description"></p>
+            <select id="modal-product-size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            <input type="number" id="modal-product-quantity" min="1" value="1">
+            <button id="add-to-cart">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <a href="/templates/pages/html/carrito.html">
+                <button id="checkout">Proceder al pago</button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Contacto</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos y condiciones</a>
+        </div>
+        <div class="social-links">
+            <br>
+            <a href="#">Contactanos</a>
+        </div>
+        <p>© 2024 Luxora Couture. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/static/scripts//js/main.js"></script>
 </body>
 </html>

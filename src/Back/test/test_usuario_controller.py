@@ -49,7 +49,7 @@ def test_usuario_controller():
         print(f"❌ Excepción al buscar por ID: {str(e)}")
     
     # 3. Prueba de búsqueda por email
-    print("\n3. Probando búsqueda por email...")
+    print("\n3. Probando búsqueda,  por email...")
     try:
         resultado_email = UsuarioController.get_by_email("carlos.rodriguez@example.com")
         if resultado_email["success"]:

@@ -18,7 +18,6 @@ db = SQLAlchemy(app)
 
 from routes import *
 
-
 # Ejecutar la aplicación
 if __name__ == '__main__':
     app.run(debug=True)

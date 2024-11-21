@@ -1,0 +1,57 @@
+#account-info {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1, h2 {
+    color: var(--color-burgundy);
+    font-family: 'Playfair Display', serif;
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    color: var(--color-teal);
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--color-burgundy);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-gold);
+}
+
+#payment-method-form div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+#payment-method-form div input{
+    width: auto;
+}
+
+#payment-method-form div input, #payment-method-form div label{
+    margin: 10px 0 10px 0;
+}
