@@ -28,4 +28,7 @@ Luxora Couture será una plataforma de eCommerce enfocada en ofrecer ropa elegan
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/JUNIORRDSR/ecommerce---Luxora-couture.git
-   ```
+
+   ##Documentación
+   ```[doc luxora.pdf](https://github.com/user-attachments/files/17850894/doc.luxora.pdf)
+
