@@ -1,2 +1,2 @@
-SQLALCHEMY_DATABASE_URI =  'mysql+pymysql://root:200801@localhost/ecommerceDB'
+SQLALCHEMY_DATABASE_URI =  'mysql+pymysql://USER:PASSWORD@ROUTE/ecommerceDB'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
